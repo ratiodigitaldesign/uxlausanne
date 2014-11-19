@@ -38,6 +38,7 @@ addevent('js-link-twitter','Social','Visit','Twitter');
 addevent('js-link-facebook','Social','Visit','Facebook');
 addevent('js-link-instagram','Social','Visit','Instagram');
 addevent('js-link-lanyrd','Social','Visit','Lanyrd');
+addevent('js-link-flickr','Social','Visit','Flickr');
 addevent('js-link-volunteers','Volunteers','Subscribe','About');
 
     

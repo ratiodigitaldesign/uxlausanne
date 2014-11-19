@@ -36,6 +36,13 @@
                     <h3>{{ talk.teaser }}</h3>
                     <p></p>
                     <p>{{ talk.description | raw }}</p>
+                    
+                    {% if talk.video is defined %}
+                        <a name="video"></a>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            {{talk.video | raw }}
+                        </div>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         </div>

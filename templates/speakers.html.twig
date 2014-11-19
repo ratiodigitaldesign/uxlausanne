@@ -51,10 +51,13 @@
                     <h4>
                         {{ talk.kind }}:
                         <span class="go-pink">
-                            <a href="{{ path('speaker', {'slug': speaker.slug })}}#{{ talk.slug }}">{{ talk.title }}</a>
-                        </span>
+                            <a href="{{ path('speaker', {'slug': speaker.slug })}}#{{ talk.slug }}">{{ talk.title }} </a>
+                        </span> 
                     </h4>
                     <p>{{ talk.teaser }}</p>
+                    {% if talk.video is defined %}
+                                <p><a href="{{ path('speaker', {'slug': speaker.slug })}}#video" class="btn btn-default btn-xs ">Watch the video</a></p>
+                                {% endif %}
                 {% endif %}
             {% endfor %}
         </div>

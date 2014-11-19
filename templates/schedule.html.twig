@@ -50,6 +50,9 @@
                     <small>{{timeslot.talk.location}}</small>
                     {% if timeslot.talk.teaser %}<hr class="short">
                     <p>{{timeslot.talk.teaser | raw }}</p>{%endif%}
+                    {% if timeslot.talk.video is defined %}
+                                <p><a href="{{ path('speaker', {'slug': speaker.slug })}}#video" class="btn btn-default btn-xs ">Watch the video</a></p>
+                    {% endif %}
             </div>
             <div class="col-sm-3 col-xs-12">
                 
